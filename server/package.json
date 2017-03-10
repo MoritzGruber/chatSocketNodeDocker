@@ -1,5 +1,5 @@
 {
-	"name": "Node.js-Chat",
+	"name": "Node.js-Chat-Server",
 	"description": "A simple chat with Node.js",
 	"author": "Moritz Gruber",
 	"scripts": {

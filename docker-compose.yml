@@ -1,4 +1,3 @@
-
 client:
   build: ./client
   links:
@@ -7,7 +6,6 @@ client:
     - "8080:8080"
   volumes:
     - ./config.json:/src/config.json
-
 
 server:
   build: ./server

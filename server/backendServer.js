@@ -6,7 +6,7 @@ var express = require('express')
 
 // Webserver
 // auf den Port x schalten
-server.listen(3000);
+server.listen(conf.portServer);
 
 // Websocket
 io.sockets.on('connection', function (socket) {
@@ -20,4 +20,4 @@ io.sockets.on('connection', function (socket) {
 });
 
 // Portnummer in die Konsole schreiben
-console.log('Der Server läuft nun unter http://127.0.0.1:' + 3000 + '/');
+console.log('Server running on http://127.0.0.1:' + conf.portServer + '/');

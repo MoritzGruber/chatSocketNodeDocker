@@ -1,10 +1,12 @@
 {
-	"name": "Node.js-Chat",
+	"name": "Node.js-Chat-Client",
 	"description": "A simple chat with Node.js",
 	"author": "Moritz Gruber",
 	"scripts": {
 		"start": "node clientServer.js"
 	},
+	"repository": "https://github.com/MoritzGruber/chatSocketNodeDocker.git",
+	"license": "MIT",
 	"dependencies" : {
 		"express": "3.x",
 		"socket.io": "*"

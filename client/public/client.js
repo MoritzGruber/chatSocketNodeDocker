@@ -3,14 +3,14 @@ $(document).ready(function(){
 	var socket = io.connect('127.0.0.1:3000');
 	// neue Nachricht
 	socket.on('chat', function (data) {
-		var zeit = new Date(data.zeit);
+		var currTime = new Date(data.zeit);
 		$('#content').append(
 			$('<li></li>').append(
 				// Uhrzeit
 				$('<span>').text('[' +
-					(zeit.getHours() < 10 ? '0' + zeit.getHours() : zeit.getHours())
+					(currTime.getHours() < 10 ? '0' + currTime.getHours() : currTime.getHours())
 					+ ':' +
-					(zeit.getMinutes() < 10 ? '0' + zeit.getMinutes() : zeit.getMinutes())
+					(currTime.getMinutes() < 10 ? '0' + currTime.getMinutes() : currTime.getMinutes())
 					+ '] '
 				),
 				// Name

@@ -5,7 +5,7 @@ var express = require('express')
 
 // Webserver
 // auf den Port x schalten
-server.listen(conf.port);
+server.listen(conf.portClient);
 
 app.configure(function(){
 	// statische Dateien ausliefern
@@ -19,4 +19,4 @@ app.get('/', function (req, res) {
 });
 
 // Portnummer in die Konsole schreiben
-console.log('Der Server läuft nun unter http://127.0.0.1:' + conf.port + '/');
+console.log('Client running on http://127.0.0.1:' + conf.portClient + '/');
