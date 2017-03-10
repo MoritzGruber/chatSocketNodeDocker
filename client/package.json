@@ -1,0 +1,12 @@
+{
+	"name": "Node.js-Chat",
+	"description": "A simple chat with Node.js",
+	"author": "Moritz Gruber",
+	"scripts": {
+		"start": "node clientServer.js"
+	},
+	"dependencies" : {
+		"express": "3.x",
+		"socket.io": "*"
+	}
+}

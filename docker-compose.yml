@@ -1,0 +1,18 @@
+
+client:
+  build: ./client
+  links:
+    - server
+  ports:
+    - "8080:8080"
+  volumes:
+    - ./config.json:/src/config.json
+
+
+server:
+  build: ./server
+  ports:
+    - "3000:3000"
+  volumes:
+    - ./config.json:/src/config.json
+
